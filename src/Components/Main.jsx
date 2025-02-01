@@ -54,13 +54,14 @@ const Main = ()=>{
                 </div>
                 </div>
 
-                {/* <div className='w-[200px] h-[200px]'>
-                    <img src={shelters} className='w-[100%] y-[100%] rounded-[50%]' />
+                <div className='bg-black/60 h-[300px] w-[100%] mt-[4rem] flex items-center'>
+                <blockquote className='text-white p-4  text-2xl'>
+                    <p className='w-[75%]'>
+                <q>Honestly, heartily, and with a commitment to serve for needy people, especially women, young girls, and youths of my country in rural and remote areas, with an honest team stand to help</q>
+                    </p>
+                <footer className='text-end mt-3'>— Sameer Ahmad Safi</footer>
+                </blockquote>
                 </div>
-
-                <div className='w-[200px] h-[200px]'>
-                    <img src={money} className='w-[100%] y-[100%] rounded-[50%]' />
-                </div> */}
 
             </div>
         </div>

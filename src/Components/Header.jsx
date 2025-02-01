@@ -4,7 +4,7 @@ import { Bars2Icon } from '@heroicons/react/16/solid';
 const Header = ()=>{
     
     return(
-        <header className="fixed w-[97%] pt-3 top-0 bg-white flex justify-between items-center">
+        <header className="fixed w-[95%] sm:w-[99%] pt-3 top-0 bg-white flex justify-between items-center">
             <div className="w-[50px] y-[50px]">
                 <img src={logo} className='w-[100%] h-[100%] transition-all duration-100 cursor-pointer'/>
             </div>
