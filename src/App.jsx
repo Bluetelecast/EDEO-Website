@@ -1,12 +1,12 @@
 import Header from "./Components/Header"
+import Main from "./Components/Main"
 
 function App() {
   return (
     <>
-      <div className='h-screen w-screen'>
+      <div className='h-screen w-screen p-2'>
         <Header/>
-        
-        <h1>Enterprenurs Development and Educational Organization</h1>
+        <Main/>
       </div>
     </>
   )
