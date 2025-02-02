@@ -1,12 +1,21 @@
+import { Route, Routes } from "react-router-dom"
+import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Main from "./Components/Main"
+import Volunteer from "./Components/Volunteer"
 
 function App() {
   return (
     <>
-      <div className='h-screen w-screen p-2'>
+      <div className='h-screen w-screen p-0'>
         <Header/>
-        <Main/>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          <Route path="/contacts" element={<Contact />}/>
+          <Route path="/volunteers" element={<Volunteer />}/>
+        </Routes>
+        <Footer />
       </div>
     </>
   )

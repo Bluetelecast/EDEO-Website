@@ -4,19 +4,19 @@ import { Bars2Icon } from '@heroicons/react/16/solid';
 const Header = ()=>{
     
     return(
-        <header className="fixed w-[95%] sm:w-[99%] pt-3 top-0 bg-white flex justify-between items-center">
+        <header className="fixed w-[100%] p-3 top-0 bg-white flex justify-between items-center">
             <div className="w-[50px] y-[50px] sm:w-[70px] sm:y-[70px]">
                 <img src={logo} className='w-[100%] h-[100%] transition-all duration-100 cursor-pointer'/>
             </div>
-            <Bars2Icon className='w-7 y-7 text-blue-500 cursor-pointer'/>
-            {/* <nav className="flex gap-4 bg-blue-100 p-3 rounded-[30px]">
+          <Bars2Icon className='w-7 y-7 text-blue-500 cursor-pointer block sm:hidden'/>  
+            <nav className="hidden gap-4 p-3 sm:flex">
                 <Link to={''}>Home</Link>
                 <Link to={''}>About Us</Link>
                 <Link to={''}>Project</Link>
-                <Link to={''}>Our Activities</Link>
-                <Link to={''}>Contact Us</Link>
+                <Link to={'/volunteers'}>Volunteers</Link>
+                <Link to={'/contacts'}>Contact Us</Link>
                 <Link to={''}>Donate</Link>            
-            </nav> */}
+            </nav>
         </header>
     );
 };
