@@ -58,7 +58,7 @@ const Volunteer = ()=>{
             We have strong volunteer team to help the helpless.
             </p>
             </header>
-            <div className="mt-[5rem] w-[80%] grid grid-cols-3  gap-x-1 place-items-center gap-y-[2rem]">
+            <div className="mt-[5rem] w-[80%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
                 {volunteers.length && volunteers.map((volunteer)=><VolunteerWrapper object ={{...volunteer}}/>)}
             </div>
         </div>

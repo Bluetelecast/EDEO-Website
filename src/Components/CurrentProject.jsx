@@ -8,7 +8,7 @@ const CurrentProject = ()=>{
         <h2 className='text-center sm:text-end text-3xl sm:text-5xl text-blue-500'>Our current Project</h2>
         <div className='flex mt-[3rem] sm:h-[250px]  gap-2 flex-wrap sm:flex-nowrap'>
             <div className='h-[100%]'>
-                <img src={office} className='w-[100%] h-[100%]' style={{minWidth:'300px'}} />
+                <img src={office} className='w-[100%] h-[100%] min-w-[300px]'/>
             </div>
             <div className='p-4 flex flex-col'>
                 <h3 className='font-normal text-2xl text-blue-950'>Certified Project Officer Certification Program</h3>

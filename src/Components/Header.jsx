@@ -11,8 +11,8 @@ const Header = ()=>{
           <Bars2Icon className='w-7 y-7 text-blue-500 cursor-pointer block sm:hidden'/>  
             <nav className="hidden gap-4 p-3 sm:flex">
                 <Link to={''}>Home</Link>
-                <Link to={''}>About Us</Link>
-                <Link to={''}>Project</Link>
+                <Link to={'/about'}>About Us</Link>
+                <Link to={'/projects'}>Projects</Link>
                 <Link to={'/volunteers'}>Volunteers</Link>
                 <Link to={'/contacts'}>Contact Us</Link>
                 <Link to={''}>Donate</Link>            
