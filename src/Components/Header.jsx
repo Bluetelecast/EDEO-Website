@@ -14,6 +14,7 @@ const Header = ()=>{
                 <Link to={'/about'}>About Us</Link>
                 <Link to={'/projects'}>Projects</Link>
                 <Link to={'/volunteers'}>Volunteers</Link>
+                <Link to={'/what_we_do'}>What we do</Link>
                 <Link to={'/contacts'}>Contact Us</Link>
                 <Link to={''}>Donate</Link>            
             </nav>
