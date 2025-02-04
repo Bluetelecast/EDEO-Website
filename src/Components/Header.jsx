@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.jpg'
 import { Bars2Icon } from '@heroicons/react/16/solid';
+import LinkItem from './LinkItem';
 const Header = ()=>{
     const navegate = useNavigate();
     return(
@@ -10,13 +11,14 @@ const Header = ()=>{
             </div>
           <Bars2Icon className='w-7 y-7 text-blue-500 cursor-pointer block sm:hidden'/>  
             <nav className="hidden gap-4 p-3 sm:flex">
-                <Link to={''}>Home</Link>
-                <Link to={'/about'}>About Us</Link>
-                <Link to={'/projects'}>Projects</Link>
-                <Link to={'/volunteers'}>Volunteers</Link>
-                <Link to={'/what_we_do'}>What we do</Link>
-                <Link to={'/contacts'}>Contact Us</Link>
-                <Link to={'/donate'}>Donate</Link>            
+                
+                <LinkItem to={'/'} name={"Home"}/> 
+                <LinkItem to={'/about'} name={"About Us"}/>
+                <LinkItem to={'/projects'} name={"Projects"}/>
+                <LinkItem to={'/volunteers'} name={"Volunteers"}/>
+                <LinkItem to={'/what_we_do'} name={"What we do"}/>
+                <LinkItem to={'/contacts'} name={"Contact us"}/>
+                <LinkItem to={'/donate'} name={"Donate"}/>            
             </nav>
         </header>
     );
