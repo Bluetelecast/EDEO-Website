@@ -8,7 +8,7 @@ const Header = ()=>{
     const navegate = useNavigate();
     const dispatch = useDispatch();
     return(
-        <header className="fixed w-[100%] p-3 top-0 bg-white flex justify-between items-center">
+        <header className="fixed w-[100%] p-3 top-0 bg-white flex justify-between items-center" style={{zIndex:1000}}>
             <div className="w-[50px] y-[50px] sm:w-[70px] sm:y-[70px]">
                 <img src={logo} onClick={()=>navegate('/')} className='w-[100%] h-[100%] transition-all duration-100 cursor-pointer'/>
             </div>

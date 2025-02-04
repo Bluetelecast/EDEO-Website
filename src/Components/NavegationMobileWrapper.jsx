@@ -10,7 +10,7 @@ const NavegationMobileWrapper=()=>{
 
     return(
         <>       
-        <div className="fixed top-[0] w-[100%] h-[100%] bg-white md:hidden">
+        <div className="fixed top-[0] w-[100%] h-[100%] bg-white md:hidden" style={{zIndex:2000}}>
         <div className="flex justify-end p-4">
          <button onClick={()=>{dispatch(hideMenu())}} className="cursor-pointer"><XMarkIcon className="w-7 h-7 text-blue-500"/></button>
         </div>
