@@ -1,5 +1,4 @@
 import office from '../assets/ProjectOfficer.jpg'
-import { HeartIcon } from '@heroicons/react/16/solid'
 
 const CurrentProject = ()=>{
 

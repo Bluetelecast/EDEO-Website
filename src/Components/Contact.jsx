@@ -1,8 +1,12 @@
 const Contact = ()=>{
     return (
-        <section className='h-[auto] mt-[0] bg-blue-400' id="contact">
-        <div className='pt-[2rem]'>
-        <h2 className='p-5 pb-0 text-end text-3xl sm:text-5xl mt-[5rem] text-white'>Get in touch</h2>
+        <section className='h-[auto]  mt-[8rem] bg-blue-400' style={{
+            borderTopLeftRadius:'40px',
+            borderTopRightRadius:'40px'
+
+        }} id="contact">
+        <div className='pt-[10px]'>
+        <h2 className='p-3 pb-0 text-end text-3xl sm:text-5xl mt-[5rem] text-white'>Get in touch</h2>
         <p className='text-end text-white p-5'>We love to hear from you</p>
         </div>
 

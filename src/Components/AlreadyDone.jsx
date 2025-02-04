@@ -7,7 +7,7 @@ const AlreadyDone = ()=>{
         <div className='mt-[4rem] sm:mt-[8rem]'>
         <h2 className='text-center text-blue-500 text-3xl sm:text-5xl'>We have already</h2>
         <div className='flex justify-around gap-3 flex-wrap mt-[6rem]'>
-        <div className='transition-all duration-200 cursor-pointer hover:bg-blue-200 w-[350px] h-[350px] grid grid_rows-2 rounded-[15px]'>
+        <div className='cursor-pointer w-[350px] h-[350px] grid grid_rows-2 rounded-[15px]'>
         <div className='w-[350px] h-[150px]'>
             <img src={food} className='w-[100%] y-[100%] rounded-tl-[15px] rounded-tr-[15px]' />
         </div>
@@ -17,7 +17,7 @@ const AlreadyDone = ()=>{
         </div>
         </div>
 
-        <div className=' w-[350px] h-[350px] transition-all duration-200 cursor-pointer hover:bg-smook-200 grid grid_rows-2 rounded-[15px]'>
+        <div className=' w-[350px] h-[350px]  cursor-pointer grid grid_rows-2 rounded-[15px]'>
         <div className='w-[350px] h-[150px]'>
             <img src={shelters} className='w-[100%] y-[100%] rounded-tl-[15px] rounded-tr-[15px]' />
         </div>
@@ -27,7 +27,7 @@ const AlreadyDone = ()=>{
         </div>
         </div>
 
-        <div className='transition-all duration-200 cursor-pointer hover:bg-blue-100 w-[350px] h-[350px] grid grid_rows-2 rounded-[15px]'>
+        <div className='cursor-pointer w-[350px] h-[350px] grid grid_rows-2 rounded-[15px]'>
         <div className='w-[350px] h-[150px]'>
             <img src={money} className='w-[100%] y-[100%] rounded-tl-[15px] rounded-tr-[15px]' />
         </div>
