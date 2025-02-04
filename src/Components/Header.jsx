@@ -16,7 +16,7 @@ const Header = ()=>{
                 <Link to={'/volunteers'}>Volunteers</Link>
                 <Link to={'/what_we_do'}>What we do</Link>
                 <Link to={'/contacts'}>Contact Us</Link>
-                <Link to={''}>Donate</Link>            
+                <Link to={'/donate'}>Donate</Link>            
             </nav>
         </header>
     );

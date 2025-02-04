@@ -13,7 +13,7 @@ const HeroSlider = () => {
     const [slides,setSlides] = useState(
         [
             { id: 1, image: reduceViolence, title: 'Reducing Violence Against Women' },
-            { id: 2, image: kids, title: 'Kids Back to School' },
+            { id: 2, image: kids, title: 'Turning Kids Back to School' },
             { id: 3, image: women, title: 'Human Rights Promotion' },
             { id: 4, image: feedHungry, title: 'Feed the helpless' },
             { id: 4, image: children, title: 'Children Rights' },
@@ -46,7 +46,7 @@ const HeroSlider = () => {
           className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
         >
           <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-          <div className="absolute inset-0  bg-opacity-50 flex items-center justify-center p-5">
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center p-5">
             <h1 className="text-white text-4xl md:text-6xl font-bold text-end">{slide.title}</h1>
           </div>
         </div>

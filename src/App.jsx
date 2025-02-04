@@ -6,8 +6,8 @@ import Main from "./Components/Main"
 import Volunteer from "./Components/Volunteer"
 import About from "./Components/About"
 import Projects from "./Components/Projects"
-import HeroSlider from "./Components/HeroSlider"
 import WhatWeDo from "./Components/WhatWeDo"
+import Donate from "./Components/Donate"
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/what_we_do" element={<WhatWeDo/>}/>
           <Route path="/projects" element={<Projects />}/>
+          <Route path="/donate" element={<Donate />}/>
         </Routes>
         <Footer />
       </div>
