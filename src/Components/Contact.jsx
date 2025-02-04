@@ -1,6 +1,6 @@
 const Contact = ()=>{
     return (
-        <section className='h-[auto] mt-[0] bg-blue-400'>
+        <section className='h-[auto] mt-[0] bg-blue-400' id="contact">
         <div className='pt-[2rem]'>
         <h2 className='p-5 pb-0 text-end text-3xl sm:text-5xl mt-[5rem] text-white'>Get in touch</h2>
         <p className='text-end text-white p-5'>We love to hear from you</p>
@@ -35,7 +35,7 @@ const Contact = ()=>{
             </div>
 
             <div className='flex flex-col text-white gap-1 w-[90%]'>
-                <button className='cursor-pointer p-3 bg-black/40 rounded' type='button'>Send Message</button>
+                <button className='cursor-pointer p-3 bg-black/40 rounded hover:bg-white hover:text-blue-500' type='button'>Send Message</button>
             </div>
         </form>
         </div>

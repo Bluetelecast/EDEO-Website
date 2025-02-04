@@ -13,7 +13,9 @@ const CurrentProject = ()=>{
             <div className='p-4 flex flex-col'>
                 <h3 className='font-normal text-2xl text-blue-950'>Certified Project Officer Certification Program</h3>
                 <p className='mt-3'>This comprehensive program is designed to equip you with the essential skills and knowledge to excel in your career in any field.</p>
-           <button className='flex items-center self-end mt-auto p-2 bg-blue-300 cursor-pointer rounded text-white'><HeartIcon className='w-5 h-5 text-white'/> Donate</button> 
+                <div className='self-end mt-auto p-2'>
+                <button className='m-4 p-4 bg-blue-500 text-white cursor-pointer'>Donate</button>
+                </div>
             </div>
         </div>
     </section>

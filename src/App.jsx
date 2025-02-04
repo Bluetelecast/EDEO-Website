@@ -6,6 +6,7 @@ import Main from "./Components/Main"
 import Volunteer from "./Components/Volunteer"
 import About from "./Components/About"
 import Projects from "./Components/Projects"
+import HeroSlider from "./Components/HeroSlider"
 
 function App() {
   return (

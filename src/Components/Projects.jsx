@@ -26,7 +26,7 @@ const Projects = ()=>{
                 photo: seminar   
             },
             {
-                title:"Reducing Stress and depression of youths",
+                title:"Reducing Stress and depression of youths and youths' unemployment",
                 photo: reducingStress
             }
         ])
@@ -38,9 +38,10 @@ const Projects = ()=>{
   We are committed to creating projects that help transform lives.
   </p>
   </header>
-  <div className="mt-[5rem] w-[80%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
+  <div className="mt-[5rem] w-[90%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
                 {volunteers.length && volunteers.map((volunteer)=><ProjectWrapper object ={{...volunteer}}/>)}
   </div>
+  
 </div>
     );
 };

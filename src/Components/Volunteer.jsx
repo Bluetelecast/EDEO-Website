@@ -9,44 +9,46 @@ import nouser from '../assets/volunteers/user.svg'
 
 import { useState } from "react";
 import VolunteerWrapper from "./VolunteerWrapper";
+import { useNavigate } from 'react-router-dom';
 
 const Volunteer = ()=>{
+    const navegate = useNavigate();
     const [volunteers,setVolunteers]=useState([
         {
          name:'Sameer Ahmadi Safir',
          photo: sameer   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Khalid Momand',
             photo: khalid   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Sarfaraz Nawabzada',
             photo: sarafraz   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Mohammad Ismail Bhat',
             photo: bhat   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Mahbooba Nisa',
             photo: nisa   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Fayaz Mirzad',
             photo: fayaz   
         },
 
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Asadullah Rashid',
             photo: rashid   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Nazifa Stanikzai',
             photo: nouser   
         },
         {
-            name:'Sameer Ahmadi Safir',
+            name:'Mursal Nomani',
             photo: nouser   
         }
     ])
@@ -55,12 +57,13 @@ const Volunteer = ()=>{
             <header className="mt-4 text-center">
             <h1 className="text-center text-5xl text-blue-950">Our Volunteers</h1>
             <p className="p-3">
-            We have strong volunteer team to help the helpless.
+            We have a strong volunteer team to help the helpless.
             </p>
             </header>
             <div className="mt-[5rem] w-[80%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
                 {volunteers.length && volunteers.map((volunteer)=><VolunteerWrapper object ={{...volunteer}}/>)}
             </div>
+            <button onClick={()=>navegate('/contacts')} className='m-4 p-4 bg-blue-400 mt-[5rem] text-white cursor-pointer'>Become Volunteer</button>
         </div>
     )
 };
