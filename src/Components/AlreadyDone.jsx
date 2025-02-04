@@ -12,7 +12,7 @@ const AlreadyDone = ()=>{
             <img src={food} className='w-[100%] y-[100%] rounded-tl-[15px] rounded-tr-[15px]' />
         </div>
         <div className='p-3 flex flex-col items-center justify-center'>
-               <h3 className='text-center font-bold  text-3xl mt-6'>455</h3>
+               <h3 id="feed" className='text-center font-bold  text-3xl mt-6'>455</h3>
         <h3 className='text-center text-3xl '>Feeded Homeless </h3>
         </div>
         </div>

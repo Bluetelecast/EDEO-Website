@@ -4,7 +4,7 @@ const Donate = ()=>{
     return(
         <>
         <div className="mt-[120px] pb-[3rem]">
-        <div className="relative w-full h-screen overflow-hidden mt-[3rem]">
+        <div className="relative mt-[3rem]" style={{aspectRatio:'16/9'}}>
         <div className={`absolute inset-0`}>
           <img src={smile} alt="child Smile" className="w-full h-full object-cover" />
           <div className="absolute bg-black/30 inset-0  bg-opacity-50 flex items-center justify-center p-5">

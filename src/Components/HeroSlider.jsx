@@ -39,7 +39,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden mt-[3rem]">
+    <div className="relative mt-[3rem]" style={{aspectRatio:'16/9'}}>
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -47,7 +47,7 @@ const HeroSlider = () => {
         >
           <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center p-5">
-            <h1 className="text-white text-4xl md:text-6xl font-bold text-end">{slide.title}</h1>
+            <h1 className="text-white text-4xl md:text-6xl font-bold text-center">{slide.title}</h1>
           </div>
         </div>
       ))}
