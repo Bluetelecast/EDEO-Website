@@ -11,23 +11,28 @@ const Projects = ()=>{
     const [volunteers,setVolunteers]=useState([
             {
              title:'Reducing Violence Against Women',
-             photo: violenceImg   
+             photo: violenceImg,
+             description:'Reducing the violence....'   
             },
             {
                 title:'Children Rights',
-                photo: childRight 
+                photo: childRight,
+                description:'Fighting for children rights....'
             },
             {
                 title:'Kids to School',
-                photo: kidSchool   
+                photo: kidSchool,
+                description:'We are commited to help children turn back  to school....'
             },
             {
                 title:"Children's week Seminar",
-                photo: seminar   
+                photo: seminar,
+                description:'Children week Seminar for children'
             },
             {
                 title:"Reducing Stress and depression of youths and youths' unemployment",
-                photo: reducingStress
+                photo: reducingStress,
+                description:'Helping youth reducing the stress and unblock them....'
             }
         ])
     return(

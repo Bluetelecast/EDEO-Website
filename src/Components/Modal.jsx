@@ -17,16 +17,16 @@ const Modal=()=>{
         </div>
 
  <div className="relative mt-[1rem]" style={{aspectRatio:'16/9'}}>
-        <div className={`absolute inset-0 p-5`}>
-          <img src={project.photo} alt="child Smile" className="w-full h-full object-cover rounded" />
-        </div>
+    <div className={`absolute inset-0 p-5`}>
+    <img src={project.photo} alt="child Smile" className="w-full h-full object-cover rounded" />
+    </div>
 </div>
 
 <div className="p-4">
     
     <h1 className="text-2xl md:text-3xl font-bold text-start text-blue-500">{project.title}</h1>
     <div className="mt-[2rem]">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, recusandae eligendi illum ipsa quos alias quod cum beatae omnis quasi! Vel totam quas doloremque rem optio corporis quos culpa autem.</p>
+        <p>{project.description}</p>
     </div>
 </div>
 </div>
