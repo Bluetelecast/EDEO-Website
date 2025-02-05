@@ -27,12 +27,12 @@ const Projects = ()=>{
             {
                 title:"Children's week Seminar",
                 photo: seminar,
-                description:'Children week Seminar for children'
+                description:"The 4th day of Children's Week was held today with the presence of government officials and private institutions with the participation of a large number of children in Vatan orphanage by the Entrepreneurs Development and Educational Organization (EDEO) and  the full support of the Department of Child Protection and the Ministry of Labor and Social Affairs."
             },
             {
                 title:"Reducing Stress,depression and unemployment of youths",
                 photo: reducingStress,
-                description:'Helping youth reducing the stress and unblock them....'
+                description:'The third round of the seminar on reducing the stress and depression of youth and youth unemployment by the Entrepreneurs Development and Educational Organization (EDEO)  in cooperation with Khatam Al-Nabiin University) with the speech of Professor Wahab Katz, the first success coach in Afghanistan, and Professor Jamshid Rasa, today with the presence of a large crowd of young people and young people, it was held in the medical hall of Khatam al-Nabiin University'
             }
         ])
     return(
