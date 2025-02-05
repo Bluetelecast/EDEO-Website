@@ -6,7 +6,7 @@ const LinkItem = (props)=>{
     const {pathname} = useLocation();
     const dispatch = useDispatch();
     return(
-         <Link onClick={()=>dispatch(hideMenu())} to={props.to} className={`p-2 transition-all duration-300 hover:bg-blue-300 hover:text-white ${pathname===props.to?'bg-blue-300 text-white':''} `}>{props.name}</Link>
+         <Link onClick={()=>dispatch(hideMenu())} to={props.to} className={`p-2 transition-all duration-500 hover:bg-blue-300 hover:text-white ${pathname===props.to?'bg-blue-300 text-white':''} `}>{props.name}</Link>
     )
 }
 export default LinkItem;

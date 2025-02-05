@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-screen p-0'>
+      <div className='p-0'>
         <Header/>
         <Routes>
           <Route path="/" element={<Main/>}/>

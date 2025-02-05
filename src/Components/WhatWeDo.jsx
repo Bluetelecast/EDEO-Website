@@ -45,6 +45,7 @@ const WhatWeDo = ()=>{
     <h2 className='p-1 pb-0 text-start text-3xl sm:text-5xl mt-[5rem] text-blue-500'>Women Rights Advocacy and Access to Equal Opportunities for Women</h2>
     <p className="p-8 text-md text-start">Afghan women have suffered considerably in the past several decades. The continuous conflict in the country, poor perceptions of traditional constraints, and local norms, misinterpretation of the Islamic teachings to the uneducated communities, and its imposition on the people of the country are believed to be the major causes behind the rollback in maintaining women's rights. EDEO will continue its usual support to women and gender equality, both from the Islamic context and perception and Afghan traditional norms. Taking this opportunity, EDEO will conduct training for Gender Equality, fundamentals of Islamic pillars, awareness of six core principles of Protection from Sexual Exploitation and Abuse (PSEA) and codes of conduct, Basic children rights in Islam, Orphans’ rights and Prevention of Workplace Harassment, Sexual Harassment, and Abuse of Authority in the Workplace. With the project called Job to the Future, EDEO aimed to bring women, widows and young girls in care to social life by providing vocational training, embroidery, sewing, garments opportunities, awareness on hygiene and sanitation and in different fields. ….. Young girls received training and …. Successfully completed the training. </p>
   </section>
+
  </article>
 
 </div>

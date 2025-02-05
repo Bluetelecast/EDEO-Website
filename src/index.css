@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@keyframes appear {
+    from {
+        scale: 0.5;
+        transform: translateX(-100px);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+    to {
+        scale: 1;
+        transform: translateX(0);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+}
+
+@keyframes appearMenu {
+    from {
+        top: -100%;
+    }
+    to {
+        top:0;
+    }
+}
+
+@keyframes appearMenuLogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes alreadyDone {
+    from {
+        transform: translateX(-100px);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+    to {
+        transform: translateX(0);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+}
+
+@keyframes articleSection {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+        scale: 1.03;
+    }
+}
+
+.logoMenu{ animation: appearMenuLogo 3s ease-in-out;}
+
+.mobileNavegation{
+    animation: appearMenu 0.5s ease-in-out;
+}
+
+
+.projectItem { 
+    animation: appear linear;
+    animation-timeline:view();
+    animation-range: entry 0 cover 40%;
+}
+
+.alreadyDoneWrapper { 
+    animation: alreadyDone linear;
+    animation-timeline:view();
+    -moz-animation-timeLine:view();
+    animation-range: entry 0;
+}
+
+article > section {
+    animation: articleSection linear;
+    animation-timeline:view();
+    -moz-animation-timeLine:view();
+    animation-range: entry 0;
+}
+
+button{
+transition: all 1s ease-in-out;    
+}
+
+button:hover {
+    box-shadow: 0.6px 0.8px 14px rgb(144, 223, 243);
+}

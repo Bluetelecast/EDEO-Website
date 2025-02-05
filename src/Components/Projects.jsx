@@ -31,7 +31,7 @@ const Projects = ()=>{
             }
         ])
     return(
-  <div className="mt-[10rem] flex flex-col items-center pb-[3rem]">
+  <div className="mt-[10rem] flex flex-col items-center pb-[3rem] project">
   <header className="mt-4 text-center">
       <h1 className="text-center text-5xl text-blue-950">Our projects & Achievements</h1>
   <p className="p-3">

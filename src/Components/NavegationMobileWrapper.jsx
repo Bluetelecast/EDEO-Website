@@ -10,13 +10,13 @@ const NavegationMobileWrapper=()=>{
 
     return(
         <>       
-        <div className="fixed top-[0] w-[100%] h-[100%] bg-white md:hidden" style={{zIndex:2000}}>
+        <div className="fixed top-[0] w-[100%] h-[100%] bg-white md:hidden mobileNavegation" style={{zIndex:2000}}>
         <div className="flex justify-end p-4">
          <button onClick={()=>{dispatch(hideMenu())}} className="cursor-pointer"><XMarkIcon className="w-7 h-7 text-blue-500"/></button>
         </div>
          <MobileNavegation/>
          <div className="flex justify-center mt-[1rem]">
-         <div className="w-[90px] h-[90px]">
+         <div className="w-[90px] h-[90px] logoMenu">
            <img src={logo} alt="" className="w-[100%] h-[100%]" />
          </div>
          </div>
