@@ -1,15 +1,25 @@
 @import "tailwindcss";
 
+@keyframes loading {
+    from {
+        opacity: 0.2;
+        background-color: rgba(0, 0, 0, 0.11);
+    }
+    to {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+
 @keyframes appear {
     from {
         scale: 0.5;
         transform: translateX(-100px);
-        /* clip-path: inset(100% 100% 0 0); */
     }
     to {
         scale: 1;
         transform: translateX(0);
-        /* clip-path: inset(100% 100% 0 0); */
     }
 }
 
@@ -34,11 +44,9 @@
 @keyframes alreadyDone {
     from {
         transform: translateX(-100px);
-        /* clip-path: inset(100% 100% 0 0); */
     }
     to {
         transform: translateX(0);
-        /* clip-path: inset(100% 100% 0 0); */
     }
 }
 
@@ -52,12 +60,15 @@
     }
 }
 
+body{
+    animation: loading 2s ease-in-out;
+}
+
 .logoMenu{ animation: appearMenuLogo 3s ease-in-out;}
 
 .mobileNavegation{
     animation: appearMenu 0.5s ease-in-out;
 }
-
 
 .projectItem { 
     animation: appear linear;
@@ -85,4 +96,8 @@ transition: all 1s ease-in-out;
 
 button:hover {
     box-shadow: 0.6px 0.8px 14px rgb(144, 223, 243);
+}
+
+.no-scrool{
+    overflow-y: hidden;
 }

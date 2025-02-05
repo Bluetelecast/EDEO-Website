@@ -10,6 +10,7 @@ import WhatWeDo from "./Components/WhatWeDo"
 import Donate from "./Components/Donate"
 import { useSelector } from "react-redux"
 import NavegationMobileWrapper from "./Components/NavegationMobileWrapper"
+import Modal from "./Components/Modal"
 
 
 function App() {
@@ -29,9 +30,8 @@ function App() {
           <Route path="/projects" element={<Projects />}/>
           <Route path="/donate" element={<Donate />}/>
         </Routes>
-        {state.showMenu && (
-          <NavegationMobileWrapper/>
-        )}        
+        {state.showMenu && (<NavegationMobileWrapper/>)} 
+        {state.showModal && (<Modal/>)}        
         <Footer />
       </div>
     </>
