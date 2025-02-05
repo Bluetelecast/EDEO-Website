@@ -30,7 +30,7 @@ const Projects = ()=>{
                 description:'Children week Seminar for children'
             },
             {
-                title:"Reducing Stress and depression of youths and youths' unemployment",
+                title:"Reducing Stress,depression and unemployment of youths",
                 photo: reducingStress,
                 description:'Helping youth reducing the stress and unblock them....'
             }
