@@ -18,7 +18,7 @@ const Hero = ()=>{
         <h2 className='p-4 text-blue-950 font-bold text-xl womenSigning'>The EDEO is a not-for-profit, non-political, and non-governmental organization, WOMEN established on 08/04/2018, registered with the Ministry of Economy of Afghanistan</h2>
         <button onClick={()=>navevegate('/about')} className='m-4 p-4 bg-blue-500 text-white cursor-pointer'>More about us</button>
         </div>
-        <div className='self-center h-[300px] w-[350px] md:w-[390px] lg:w-[500px] womenSigning'>
+        <div className='self-center h-[300px] w-[350px] md:w-[390px] lg:w-[500px]'>
         <img className='w-[100%] h-[100%] aspect-[4/3] rounded-[20px] shadow' src={womenSigning} />
         </div>
         </div>
