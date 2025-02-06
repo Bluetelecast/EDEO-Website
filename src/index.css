@@ -97,11 +97,14 @@ article > section {
     animation-range: entry 0;
 }
 
-button{
+button,
+.volunteer {
 transition: all 1s ease-in-out;    
 }
 
-button:hover {
+button:hover,
+.volunteer:hover
+{
     box-shadow: 0.6px 0.8px 14px rgb(144, 223, 243);
 }
 

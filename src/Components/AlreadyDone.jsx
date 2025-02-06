@@ -17,7 +17,7 @@ const AlreadyDone = ()=>{
             title:'Shelters built'
         },
         {
-            photo:shelters,
+            photo:money,
             number:'$12000',
             title:'Money Donated'
         }
