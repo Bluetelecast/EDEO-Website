@@ -9,7 +9,7 @@ const Footer = ()=>{
             <div className='mt-[1rem] flex w-[100%] justify-evenly items-center p-4 flex-wrap'>
                 <motion.div
                 whileInView={{rotate:360,transition:{
-                    repeat: Infinity,
+                    repeat:3,
                     duration:3}}}
                  className='w-[100px] h-[100px]'>
                     <img src={logo} className='w-[100%] h-[100%] rounded-[50%]' />

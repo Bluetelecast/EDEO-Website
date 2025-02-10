@@ -63,7 +63,7 @@ const Volunteer = ()=>{
             <div className="mt-[5rem] w-[80%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
                 {volunteers.length && volunteers.map((volunteer)=><VolunteerWrapper object ={{...volunteer}}/>)}
             </div>
-            <button onClick={()=>navegate('/contacts')} className='m-4 p-4 bg-blue-400 mt-[5rem] text-white cursor-pointer'>Become Member</button>
+            <button onClick={()=>{navegate('/contacts');window.scrollTo(0,0)}} className='m-4 p-4 bg-blue-400 mt-[5rem] text-white cursor-pointer'>Become Member</button>
         </div>
     )
 };

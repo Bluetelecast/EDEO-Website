@@ -111,3 +111,9 @@ button:hover,
 .no-scrool{
     overflow-y: hidden;
 }
+
+input:focus,
+textarea:focus
+{
+    outline: none;
+}
