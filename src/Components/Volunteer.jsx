@@ -55,15 +55,15 @@ const Volunteer = ()=>{
     return(
         <div className="mt-[10rem] flex flex-col items-center pb-[3rem]">
             <header className="mt-4 text-center">
-            <h1 className="text-center text-5xl text-blue-950">Our Volunteers</h1>
+            <h1 className="text-center text-5xl text-blue-950">Our Team</h1>
             <p className="p-3">
-            We have a strong volunteer team to help the helpless.
+            We have a strong team to help the helpless.
             </p>
             </header>
             <div className="mt-[5rem] w-[80%] flex justify-center gap-5 flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-x-5  sm:gap-x-5 sm:place-items-center sm:gap-y-[2rem]">
                 {volunteers.length && volunteers.map((volunteer)=><VolunteerWrapper object ={{...volunteer}}/>)}
             </div>
-            <button onClick={()=>navegate('/contacts')} className='m-4 p-4 bg-blue-400 mt-[5rem] text-white cursor-pointer'>Become Volunteer</button>
+            <button onClick={()=>navegate('/contacts')} className='m-4 p-4 bg-blue-400 mt-[5rem] text-white cursor-pointer'>Become Member</button>
         </div>
     )
 };
