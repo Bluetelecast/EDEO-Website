@@ -16,10 +16,10 @@ const Contact = ()=>{
                 <label htmlFor="name">Name</label>
                 <input type="text" id='name' className='p-2 bg-black/40 rounded'/>
             </div>
-            <div className='flex flex-col text-white gap-1 w-[90%]'>
+            {/* <div className='flex flex-col text-white gap-1 w-[90%]'>
                 <label htmlFor="company">Company</label>
                 <input type="text" id='company' className='p-2 bg-black/40 rounded'/>
-            </div>
+            </div> */}
 
 
             <div className='flex flex-col text-white gap-1 w-[90%]'>

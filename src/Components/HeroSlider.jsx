@@ -1,31 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import kids from "../assets/slideImg/kids.jpg"
-import reduceViolence from '../assets/slideImg/reducingViolence.webp'
-import feedHungry from '../assets/slideImg/feed.jpeg'
-import women from '../assets/slideImg/women.webp'
-import children from '../assets/slideImg/children.jpeg'
-
-
-
+import { motion, AnimatePresence } from 'framer-motion';
+import kids from "../assets/slideImg/kids.jpg";
+import reduceViolence from '../assets/slideImg/reducingViolence.webp';
+import feedHungry from '../assets/slideImg/feed.jpeg';
+import women from '../assets/slideImg/women.webp';
+import children from '../assets/slideImg/children.jpeg';
 
 const HeroSlider = () => {
-    
-    const [slides,setSlides] = useState(
-        [
-            { id: 1, image: reduceViolence, title: 'Reducing Violence Against Women' },
-            { id: 2, image: kids, title: 'Turning Kids Back to School' },
-            { id: 3, image: women, title: 'Human Rights Promotion' },
-            { id: 4, image: feedHungry, title: 'Feed the helpless' },
-            { id: 4, image: children, title: 'Children Rights' },
-          ]
-    ) ;
+  const slides = [
+    { id: 1, image: reduceViolence, title: 'Together, We Can End Violence Against Women' },
+    { id: 2, image: kids, title: 'Back to School: Transforming Young Lives' },
+    { id: 3, image: women, title: 'Advocating for Human Rights for All' },
+    { id: 4, image: feedHungry, title: 'Feeding Hope: Supporting Those in Need' },
+    { id: 5, image: children, title: "Protecting Children's Rights for a Better Future" },
+  ];
 
-    const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000); 
+      nextSlide();
+    }, 5000);
 
     return () => clearInterval(slideInterval);
   }, []);
@@ -39,29 +34,44 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative mt-[3rem]" style={{aspectRatio:'16/9'}}>
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+    <div className="relative mt-[3rem] overflow-hidden" style={{ aspectRatio: '16/9' }}>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={slides[currentSlide].id}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.8 }}
+          className="absolute inset-0 w-full h-full"
         >
-          <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
+          <img
+            src={slides[currentSlide].image}
+            alt={slides[currentSlide].title}
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center p-5">
-            <h1 className="text-white text-4xl md:text-6xl font-bold text-center">{slide.title}</h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="text-white text-3xl md:text-6xl font-bold text-center"
+            >
+              {slides[currentSlide].title}
+            </motion.h1>
           </div>
-        </div>
-      ))}
+        </motion.div>
+      </AnimatePresence>
 
-
+      {/* Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 cursor-pointer left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+        className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-white bg-opacity-50 p-3 rounded-full hover:bg-opacity-80 transition"
       >
         &#10094;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 cursor-pointer right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+        className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-white bg-opacity-50 p-3 rounded-full hover:bg-opacity-80 transition"
       >
         &#10095;
       </button>
@@ -72,7 +82,9 @@ const HeroSlider = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-gray-400'}`}
+            className={`w-3 h-3 rounded-full transition ${
+              index === currentSlide ? 'bg-white' : 'bg-gray-400'
+            } cursor-pointer`}
           />
         ))}
       </div>

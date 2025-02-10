@@ -1,10 +1,29 @@
+import { motion,useScroll } from "framer-motion";
+
 const About = ()=>{
+  
+  const {scrollYProgress}=useScroll();
+
     return(
 <div className="mt-[10rem] flex flex-col items-center pb-[3rem]">
+
   <header className="mt-4 text-center">
       <h1 className="text-center text-5xl text-blue-950">About us</h1>
   </header>
-
+  <motion.div
+    id="scroll-indicator"
+    style={{
+              zIndex:5000,
+              scaleX: scrollYProgress,
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 3,
+              originX: 0,
+              backgroundColor: "#00b7ff",
+          }}
+            />
  <article className="p-8">
  <section className="">
     <h2 className='p-1 text-start text-3xl sm:text-5xl mt-[5rem] text-blue-500'>Our Mission</h2>
@@ -21,7 +40,7 @@ const About = ()=>{
 
   <section className="">
     <h2 className='p-1 text-start text-3xl sm:text-5xl mt-[5rem] text-blue-500'>Our core Values</h2>
-    <ul className="p-1 mt-3 flex flex-col gap-4" style={{listStyle:'circle'}}>
+    <ul className="p-6 pb-1 mt-3 flex flex-col gap-4" style={{listStyle:'circle'}}>
         <li>
         Transparency
         </li>

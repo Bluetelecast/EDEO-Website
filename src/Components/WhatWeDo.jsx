@@ -1,4 +1,7 @@
+import { motion,useScroll } from "framer-motion";
+
 const WhatWeDo = ()=>{
+  const {scrollYProgress} = useScroll();
     return(
 <div className="mt-[10rem] flex flex-col items-center pb-[3rem]">
   <header className="mt-4 text-center">
@@ -6,6 +9,21 @@ const WhatWeDo = ()=>{
   </header>
 
  <article className="p-8">
+
+ <motion.div
+    id="scroll-indicatorWedo"
+    style={{
+              zIndex:5000,
+              scaleX: scrollYProgress,
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 3,
+              originX: 0,
+              backgroundColor: "#00b7ff",
+          }}
+            />
  <section className="">
     <h2 className='p-1 text-start text-3xl sm:text-5xl mt-[5rem] text-blue-500'>Education & Capacity Building Programs welfare</h2>
     <p className="p-1 mt-3 text-md text-start">
